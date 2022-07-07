@@ -35,6 +35,9 @@ requireAsync("Assets.TinaX.LuaExtension.init", function(extension, err)
     end)
 end)
 
+local Test = require("Assets.App.Lua.UI.test")
+Test.Test()
+
 --[[
     Non asynchronous writing of the above code
 ]]

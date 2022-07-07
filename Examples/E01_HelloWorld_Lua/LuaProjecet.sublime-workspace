@@ -1,0 +1,989 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"shi",
+				"shift+tab"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "Assets/App/Lua/Startup/startup.lua.txt",
+			"settings":
+			{
+				"buffer_size": 1423,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "Searching 100 files for \"require\"\n\nE:\\UnityProj_2019\\TinaX\\Examples\\E01_HelloWorld_Lua\\Assets\\App\\Lua\\Startup\\startup.lua.txt:\n    6  ]]\n    7  \n    8: -- require('LuaDebuggee').StartDebug('127.0.0.1', 9827) \n    9  --[[\n   10      LuaPerfect debug code. see: https://luaperfect.net/\n   ..\n   16  \n   17  -- init \"TinaX Lua Extension\" , https://github.com/yomunsam/TinaX.Lua.Extension\n   18: requireAsync(\"Assets.TinaX.LuaExtension.init\", function(extension, err)\n   19      if(err ~= nil ) then\n   20          error(\"init tinax lua extension failed  :\" .. err.Message)\n   ..\n   36  end)\n   37  \n   38: local Test = require \"test\"\n   39  Test.Test()\n   40  \n   ..\n   42      Non asynchronous writing of the above code\n   43  ]]\n   44: -- local extension = require(\"Assets.TinaX.LuaExtension.init\");\n   45  -- extension.Init(\"Assets.TinaX.LuaExtension\", {\n   46  --     EnablePackages = {\n\nE:\\UnityProj_2019\\TinaX\\Examples\\E01_HelloWorld_Lua\\Assets\\TinaX\\Lua\\LICENSE:\n   22  case that the jurisdiction has no such laws, regulations, rules and\n   23  standards or its laws, regulations, rules and standards are\n   24: unenforceable, the individual or the legal entity are required to\n   25  comply with Core International Labor Standards.\n   26  \n   ..\n   95  The GNU Affero General Public License is designed specifically to\n   96  ensure that, in such cases, the modified source code becomes available\n   97: to the community. It requires the operator of a network server to\n   98  provide the source code of the modified version running there to the\n   99  users of that server. Therefore, public use of a modified version, on\n  ...\n  184  includes interface definition files associated with source files for\n  185  the work, and the source code for shared libraries and dynamically\n  186: linked subprograms that the work is specifically designed to require,\n  187  such as by intimate data communication or control flow between those\n  188  subprograms and other parts of the work.\n  ...\n  259  -   b) The work must carry prominent notices stating that it is\n  260      released under this License and any conditions added under\n  261:     section 7. This requirement modifies the requirement in section 4\n  262      to \"keep intact all notices\".\n  263  -   c) You must license the entire work, as a whole, under this\n  ...\n  313      place (gratis or for a charge), and offer equivalent access to the\n  314      Corresponding Source in the same way through the same place at no\n  315:     further charge. You need not require recipients to copy the\n  316      Corresponding Source along with the object code. If the place to\n  317      copy the object code is a network server, the Corresponding Source\n  ...\n  321      Corresponding Source. Regardless of what server hosts the\n  322      Corresponding Source, you remain obligated to ensure that it is\n  323:     available for as long as needed to satisfy these requirements.\n  324  -   e) Convey the object code using peer-to-peer transmission,\n  325      provided you inform other peers where the object code and\n  ...\n  346  \n  347  \"Installation Information\" for a User Product means any methods,\n  348: procedures, authorization keys, or other information required to\n  349  install and execute modified versions of a covered work in that User\n  350  Product from a modified version of its Corresponding Source. The\n  ...\n  359  fixed term (regardless of how the transaction is characterized), the\n  360  Corresponding Source conveyed under this section must be accompanied\n  361: by the Installation Information. But this requirement does not apply\n  362  if neither you nor any third party retains the ability to install\n  363  modified object code on the User Product (for example, the work has\n  364  been installed in ROM).\n  365  \n  366: The requirement to provide Installation Information does not include a\n  367: requirement to continue to provide support service, warranty, or\n  368  updates for a work that has been modified or installed by the\n  369  recipient, or for the User Product in which it has been modified or\n  ...\n  376  in accord with this section must be in a format that is publicly\n  377  documented (and with an implementation available to the public in\n  378: source code form), and must require no special password or key for\n  379  unpacking, reading or copying.\n  380  \n  ...\n  392  When you convey a copy of a covered work, you may at your option\n  393  remove any additional permissions from that copy, or from any part of\n  394: it. (Additional permissions may be written to require their own\n  395  removal in certain cases when you modify the work.) You may place\n  396  additional permissions on material, added by you to a covered work,\n  ...\n  436  Additional terms, permissive or non-permissive, may be stated in the\n  437  form of a separately written license, or stated as exceptions; the\n  438: above requirements apply either way.\n  439  \n  440  #### 8. Termination.\n  ...\n  466  material under section 10.\n  467  \n  468: #### 9. Acceptance Not Required for Having Copies.\n  469  \n  470: You are not required to accept this License in order to receive or run\n  471  a copy of the Program. Ancillary propagation of a covered work\n  472  occurring solely as a consequence of using peer-to-peer transmission\n  473: to receive a copy likewise does not require acceptance. However,\n  474  nothing other than this License grants you permission to propagate or\n  475  modify any covered work. These actions infringe copyright if you do\n  ...\n  515  consequence of further modification of the contributor version. For\n  516  purposes of this definition, \"control\" includes the right to grant\n  517: patent sublicenses in a manner consistent with the requirements of\n  518  this License.\n  519  \n  ...\n  537  available, or (2) arrange to deprive yourself of the benefit of the\n  538  patent license for this particular work, or (3) arrange, in a manner\n  539: consistent with the requirements of this License, to extend the patent\n  540  license to downstream recipients. \"Knowingly relying\" means you have\n  541  actual knowledge that, but for the patent license, your conveying the\n  ...\n  645  #### 16. Limitation of Liability.\n  646  \n  647: IN NO EVENT UNLESS REQUIRED BY APPLICABLE LAW OR AGREED TO IN WRITING\n  648  WILL ANY COPYRIGHT HOLDER, OR ANY OTHER PARTY WHO MODIFIES AND/OR\n  649  CONVEYS THE PROGRAM AS PERMITTED ABOVE, BE LIABLE TO YOU FOR DAMAGES,\n  ...\n  703  of the code. There are many ways you could offer source, and different\n  704  solutions will be better for different programs; see section 13 for\n  705: the specific requirements.\n  706  \n  707  You should also get your employer (if you work as a programmer) or\n\nE:\\UnityProj_2019\\TinaX\\Examples\\E01_HelloWorld_Lua\\Assets\\TinaX\\Lua\\Lua\\extend\\luabase.lua.txt:\n   14  end\n   15  \n   16: function requireAsync(path,callback)\n   17      loadstringAsync(path,function(func,err)\n   18          if(callback ~= nil) then\n\nE:\\UnityProj_2019\\TinaX\\Examples\\E01_HelloWorld_Lua\\Assets\\TinaX\\Lua\\Runtime\\Scripts\\LuaBootstrap.cs:\n   12                  try\n   13                  {\n   14:                     lua.RequireEntryFile();\n   15                  }\n   16                  catch(Exception e)\n\nE:\\UnityProj_2019\\TinaX\\Examples\\E01_HelloWorld_Lua\\Assets\\TinaX\\Lua\\Runtime\\Scripts\\LuaManager.cs:\n  113          }\n  114  \n  115:         public void LuaRequireToPath(ref string fileName)\n  116          {\n  117              if (fileName.IndexOf('.') != -1)\n  ...\n  134          }\n  135  \n  136:         public void LoadStringAsync(string require_text, Action<LuaFunction,Exception> callback)\n  137          {\n  138:             string final_path = require_text;\n  139:             LuaRequireToPath(ref final_path);\n  140              m_Assets.LoadAsync(final_path, typeof(TextAsset), (asset, error) =>\n  141              {\n  ...\n  153          }\n  154  \n  155:         public void RequireEntryFile()\n  156          {\n  157              if (m_EntryFunc != null)\n  ...\n  167  \n  168  \n  169:             LuaRequireToPath(ref fileName);\n  170  \n  171              //使用同步接口加载资源\n  ...\n  189              {\n  190                  string final_path = c_InternalLuaEntryPath;\n  191:                 LuaRequireToPath(ref final_path);\n  192                  TextAsset ta = await m_Assets.LoadAsync<TextAsset>(final_path);\n  193                  object[] obj_result = m_LuaVM.DoString(ta.bytes, final_path);\n  ...\n  198                  foreach (var item in init_list)\n  199                  {\n  200:                     list_task.Add(require_init_file(item));\n  201                  }\n  202                  await Task.WhenAll(list_task);\n  ...\n  213          }\n  214  \n  215:         private async Task require_init_file(string req_str)\n  216          {\n  217              string final_path = req_str;\n  218:             LuaRequireToPath(ref final_path);\n  219              TextAsset ta = await m_Assets.LoadAsync<TextAsset>(final_path);\n  220              m_LuaVM.DoString(ta.bytes, final_path);\n\nE:\\UnityProj_2019\\TinaX\\Examples\\E01_HelloWorld_Lua\\Assets\\TinaX\\Lua\\Runtime\\Scripts\\Interfaces\\ILua.cs:\n   15  \n   16          ILua ConfigureCustomLoadHandler(Action<CustomLoadHandlerManager> options);\n   17:         void LoadStringAsync(string require_text, Action<LuaFunction, Exception> callback);\n   18      }\n   19  }\n\nE:\\UnityProj_2019\\TinaX\\Examples\\E01_HelloWorld_Lua\\Assets\\TinaX\\Lua\\Runtime\\Scripts\\Interfaces\\ILuaInternal.cs:\n   10  \n   11          Task<XException> Start();\n   12:         void RequireEntryFile();\n   13      }\n   14  }\n\nE:\\UnityProj_2019\\TinaX\\Examples\\E01_HelloWorld_Lua\\Assets\\TinaX\\Lua\\Vendor\\Plugins\\xlua.bundle\\Contents\\MacOS\\xlua:\n    <binary>\n\nE:\\UnityProj_2019\\TinaX\\Examples\\E01_HelloWorld_Lua\\Assets\\TinaX\\Lua\\Vendor\\Src\\CodeEmit.cs:\n    4   * Licensed under the MIT License (the \"License\"); you may not use this file except in compliance with the License. You may obtain a copy of the License at\n    5   * http://opensource.org/licenses/MIT\n    6:  * Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \"AS IS\" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.\n    7  */\n    8  \n\nE:\\UnityProj_2019\\TinaX\\Examples\\E01_HelloWorld_Lua\\Assets\\TinaX\\Lua\\Vendor\\Src\\CopyByValue.cs:\n    4   * Licensed under the MIT License (the \"License\"); you may not use this file except in compliance with the License. You may obtain a copy of the License at\n    5   * http://opensource.org/licenses/MIT\n    6:  * Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \"AS IS\" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.\n    7  */\n    8  \n\nE:\\UnityProj_2019\\TinaX\\Examples\\E01_HelloWorld_Lua\\Assets\\TinaX\\Lua\\Vendor\\Src\\DelegateBridge.cs:\n    4   * Licensed under the MIT License (the \"License\"); you may not use this file except in compliance with the License. You may obtain a copy of the License at\n    5   * http://opensource.org/licenses/MIT\n    6:  * Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \"AS IS\" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.\n    7  */\n    8  \n\nE:\\UnityProj_2019\\TinaX\\Examples\\E01_HelloWorld_Lua\\Assets\\TinaX\\Lua\\Vendor\\Src\\GenAttributes.cs:\n    4   * Licensed under the MIT License (the \"License\"); you may not use this file except in compliance with the License. You may obtain a copy of the License at\n    5   * http://opensource.org/licenses/MIT\n    6:  * Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \"AS IS\" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.\n    7  */\n    8  \n\nE:\\UnityProj_2019\\TinaX\\Examples\\E01_HelloWorld_Lua\\Assets\\TinaX\\Lua\\Vendor\\Src\\GenericDelegateBridge.cs:\n    4   * Licensed under the MIT License (the \"License\"); you may not use this file except in compliance with the License. You may obtain a copy of the License at\n    5   * http://opensource.org/licenses/MIT\n    6:  * Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \"AS IS\" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.\n    7  */\n    8  \n\nE:\\UnityProj_2019\\TinaX\\Examples\\E01_HelloWorld_Lua\\Assets\\TinaX\\Lua\\Vendor\\Src\\InternalGlobals.cs:\n    4   * Licensed under the MIT License (the \"License\"); you may not use this file except in compliance with the License. You may obtain a copy of the License at\n    5   * http://opensource.org/licenses/MIT\n    6:  * Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \"AS IS\" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.\n    7  */\n    8  \n\nE:\\UnityProj_2019\\TinaX\\Examples\\E01_HelloWorld_Lua\\Assets\\TinaX\\Lua\\Vendor\\Src\\LuaBase.cs:\n    4   * Licensed under the MIT License (the \"License\"); you may not use this file except in compliance with the License. You may obtain a copy of the License at\n    5   * http://opensource.org/licenses/MIT\n    6:  * Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \"AS IS\" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.\n    7  */\n    8  \n\nE:\\UnityProj_2019\\TinaX\\Examples\\E01_HelloWorld_Lua\\Assets\\TinaX\\Lua\\Vendor\\Src\\LuaDLL.cs:\n    4   * Licensed under the MIT License (the \"License\"); you may not use this file except in compliance with the License. You may obtain a copy of the License at\n    5   * http://opensource.org/licenses/MIT\n    6:  * Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \"AS IS\" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.\n    7  */\n    8  \n\nE:\\UnityProj_2019\\TinaX\\Examples\\E01_HelloWorld_Lua\\Assets\\TinaX\\Lua\\Vendor\\Src\\LuaEnv.cs:\n    4   * Licensed under the MIT License (the \"License\"); you may not use this file except in compliance with the License. You may obtain a copy of the License at\n    5   * http://opensource.org/licenses/MIT\n    6:  * Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \"AS IS\" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.\n    7  */\n    8  \n    .\n  599          internal List<CustomLoader> customLoaders = new List<CustomLoader>();\n  600  \n  601:         //loader : CustomLoader£¬ filepath²ÎÊý£º£¨refÀàÐÍ£©ÊäÈëÊÇrequireµÄ²ÎÊý£¬Èç¹ûÐèÒªÖ§³Öµ÷ÊÔ£¬ÐèÒªÊä³öÕæÊµÂ·¾¶¡£\n  602          //                        ·µ»ØÖµ£ºÈç¹û·µ»Ønull£¬´ú±í¼ÓÔØ¸ÃÔ´ÏÂÎÞºÏÊÊµÄÎÄ¼þ£¬·ñÔò·µ»ØUTF8±àÂëµÄbyte[]\n  603          public void AddLoader(CustomLoader loader)\n\nE:\\UnityProj_2019\\TinaX\\Examples\\E01_HelloWorld_Lua\\Assets\\TinaX\\Lua\\Vendor\\Src\\LuaException.cs:\n    4   * Licensed under the MIT License (the \"License\"); you may not use this file except in compliance with the License. You may obtain a copy of the License at\n    5   * http://opensource.org/licenses/MIT\n    6:  * Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \"AS IS\" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.\n    7  */\n    8  \n\nE:\\UnityProj_2019\\TinaX\\Examples\\E01_HelloWorld_Lua\\Assets\\TinaX\\Lua\\Vendor\\Src\\LuaFunction.cs:\n    4   * Licensed under the MIT License (the \"License\"); you may not use this file except in compliance with the License. You may obtain a copy of the License at\n    5   * http://opensource.org/licenses/MIT\n    6:  * Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \"AS IS\" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.\n    7  */\n    8  \n\nE:\\UnityProj_2019\\TinaX\\Examples\\E01_HelloWorld_Lua\\Assets\\TinaX\\Lua\\Vendor\\Src\\LuaTable.cs:\n    4   * Licensed under the MIT License (the \"License\"); you may not use this file except in compliance with the License. You may obtain a copy of the License at\n    5   * http://opensource.org/licenses/MIT\n    6:  * Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \"AS IS\" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.\n    7  */\n    8  \n\nE:\\UnityProj_2019\\TinaX\\Examples\\E01_HelloWorld_Lua\\Assets\\TinaX\\Lua\\Vendor\\Src\\MethodWarpsCache.cs:\n    4   * Licensed under the MIT License (the \"License\"); you may not use this file except in compliance with the License. You may obtain a copy of the License at\n    5   * http://opensource.org/licenses/MIT\n    6:  * Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \"AS IS\" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.\n    7  */\n    8  \n\nE:\\UnityProj_2019\\TinaX\\Examples\\E01_HelloWorld_Lua\\Assets\\TinaX\\Lua\\Vendor\\Src\\ObjectCasters.cs:\n    4   * Licensed under the MIT License (the \"License\"); you may not use this file except in compliance with the License. You may obtain a copy of the License at\n    5   * http://opensource.org/licenses/MIT\n    6:  * Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \"AS IS\" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.\n    7  */\n    8  \n\nE:\\UnityProj_2019\\TinaX\\Examples\\E01_HelloWorld_Lua\\Assets\\TinaX\\Lua\\Vendor\\Src\\ObjectPool.cs:\n    4   * Licensed under the MIT License (the \"License\"); you may not use this file except in compliance with the License. You may obtain a copy of the License at\n    5   * http://opensource.org/licenses/MIT\n    6:  * Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \"AS IS\" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.\n    7  */\n    8  \n\nE:\\UnityProj_2019\\TinaX\\Examples\\E01_HelloWorld_Lua\\Assets\\TinaX\\Lua\\Vendor\\Src\\ObjectTranslator.cs:\n    4   * Licensed under the MIT License (the \"License\"); you may not use this file except in compliance with the License. You may obtain a copy of the License at\n    5   * http://opensource.org/licenses/MIT\n    6:  * Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \"AS IS\" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.\n    7  */\n    8  \n\nE:\\UnityProj_2019\\TinaX\\Examples\\E01_HelloWorld_Lua\\Assets\\TinaX\\Lua\\Vendor\\Src\\ObjectTranslatorPool.cs:\n    4   * Licensed under the MIT License (the \"License\"); you may not use this file except in compliance with the License. You may obtain a copy of the License at\n    5   * http://opensource.org/licenses/MIT\n    6:  * Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \"AS IS\" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.\n    7  */\n    8  \n\nE:\\UnityProj_2019\\TinaX\\Examples\\E01_HelloWorld_Lua\\Assets\\TinaX\\Lua\\Vendor\\Src\\RawObject.cs:\n    4   * Licensed under the MIT License (the \"License\"); you may not use this file except in compliance with the License. You may obtain a copy of the License at\n    5   * http://opensource.org/licenses/MIT\n    6:  * Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \"AS IS\" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.\n    7  */\n    8  \n\nE:\\UnityProj_2019\\TinaX\\Examples\\E01_HelloWorld_Lua\\Assets\\TinaX\\Lua\\Vendor\\Src\\StaticLuaCallbacks.cs:\n    4   * Licensed under the MIT License (the \"License\"); you may not use this file except in compliance with the License. You may obtain a copy of the License at\n    5   * http://opensource.org/licenses/MIT\n    6:  * Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \"AS IS\" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.\n    7  */\n    8  \n\nE:\\UnityProj_2019\\TinaX\\Examples\\E01_HelloWorld_Lua\\Assets\\TinaX\\Lua\\Vendor\\Src\\Utils.cs:\n    4   * Licensed under the MIT License (the \"License\"); you may not use this file except in compliance with the License. You may obtain a copy of the License at\n    5   * http://opensource.org/licenses/MIT\n    6:  * Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \"AS IS\" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.\n    7  */\n    8  \n\nE:\\UnityProj_2019\\TinaX\\Examples\\E01_HelloWorld_Lua\\Assets\\TinaX\\Lua\\Vendor\\Src\\Editor\\Generator.cs:\n    4   * Licensed under the MIT License (the \"License\"); you may not use this file except in compliance with the License. You may obtain a copy of the License at\n    5   * http://opensource.org/licenses/MIT\n    6:  * Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \"AS IS\" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.\n    7  */\n    8  \n    .\n 1619              templateRef = templates;\n 1620              GetGenConfig(all_types.Where(type => !type.IsGenericTypeDefinition));\n 1621:             luaenv.DoString(\"require 'TemplateCommon'\");\n 1622              luaenv.Global.Set(\"IsExtensionMethod\", new Func<MethodInfo, bool>(IsExtensionMethod));\n 1623              luaenv.Global.Set(\"IsDelegate\", new Func<Type, bool>(IsDelegate));\n ....\n 1659              Directory.CreateDirectory(GeneratorConfig.common_path);\n 1660              GetGenConfig(XLua.Utils.GetAllTypes());\n 1661:             luaenv.DoString(\"require 'TemplateCommon'\");\n 1662              var gen_push_types_setter = luaenv.Global.Get<LuaFunction>(\"SetGenPushAndUpdateTypes\");\n 1663              gen_push_types_setter.Call(GCOptimizeList.Where(t => !t.IsPrimitive && SizeOf(t) != -1).Concat(LuaCallCSharp.Where(t => t.IsEnum)).Distinct().ToList());\n\nE:\\UnityProj_2019\\TinaX\\Examples\\E01_HelloWorld_Lua\\Assets\\TinaX\\Lua\\Vendor\\Src\\Editor\\Hotfix.cs:\n    4   * Licensed under the MIT License (the \"License\"); you may not use this file except in compliance with the License. You may obtain a copy of the License at\n    5   * http://opensource.org/licenses/MIT\n    6:  * Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \"AS IS\" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.\n    7  */\n    8  \n\nE:\\UnityProj_2019\\TinaX\\Examples\\E01_HelloWorld_Lua\\Assets\\TinaX\\Lua\\Vendor\\Src\\Editor\\LinkXmlGen\\LinkXmlGen.tpl.txt:\n    1  <%\n    2: require \"TemplateCommon\"\n    3  %>\n    4  \n\nE:\\UnityProj_2019\\TinaX\\Examples\\E01_HelloWorld_Lua\\Assets\\TinaX\\Lua\\Vendor\\Src\\Editor\\Template\\LuaClassWrap.tpl.txt:\n   13  <%ForEachCsList(namespaces, function(namespace)%>using <%=namespace%>;<%end)%>\n   14  <%\n   15: require \"TemplateCommon\"\n   16  \n   17  local OpNameMap = {\n\nE:\\UnityProj_2019\\TinaX\\Examples\\E01_HelloWorld_Lua\\Assets\\TinaX\\Lua\\Vendor\\Src\\Editor\\Template\\LuaClassWrapGCM.tpl.txt:\n   13  <%ForEachCsList(namespaces, function(namespace)%>using <%=namespace%>;<%end)%>\n   14  <%\n   15: require \"TemplateCommon\"\n   16  \n   17  local OpNameMap = {\n\nE:\\UnityProj_2019\\TinaX\\Examples\\E01_HelloWorld_Lua\\Assets\\TinaX\\Lua\\Vendor\\Src\\Editor\\Template\\LuaDelegateBridge.tpl.txt:\n   11  using System;\n   12  <%\n   13: require \"TemplateCommon\"\n   14  %>\n   15  \n\nE:\\UnityProj_2019\\TinaX\\Examples\\E01_HelloWorld_Lua\\Assets\\TinaX\\Lua\\Vendor\\Src\\Editor\\Template\\LuaDelegateWrap.tpl.txt:\n   12  using System.Collections.Generic;\n   13  <%\n   14: require \"TemplateCommon\"\n   15  \n   16  local parameters = delegate:GetParameters()\n\nE:\\UnityProj_2019\\TinaX\\Examples\\E01_HelloWorld_Lua\\Assets\\TinaX\\Lua\\Vendor\\Src\\Editor\\Template\\LuaEnumWrap.tpl.txt:\n   12  using System.Collections.Generic;\n   13  <%\n   14: require \"TemplateCommon\"\n   15  local enum_or_op = debug.getmetatable(CS.System.Reflection.BindingFlags.Public).__bor\n   16  %>\n\nE:\\UnityProj_2019\\TinaX\\Examples\\E01_HelloWorld_Lua\\Assets\\TinaX\\Lua\\Vendor\\Src\\Editor\\Template\\LuaEnumWrapGCM.tpl.txt:\n   12  using System.Collections.Generic;\n   13  <%\n   14: require \"TemplateCommon\"\n   15  local enum_or_op = debug.getmetatable(CS.System.Reflection.BindingFlags.Public).__bor\n   16  %>\n\nE:\\UnityProj_2019\\TinaX\\Examples\\E01_HelloWorld_Lua\\Assets\\TinaX\\Lua\\Vendor\\Src\\Editor\\Template\\LuaInterfaceBridge.tpl.txt:\n   12  using System;\n   13  <%\n   14: require \"TemplateCommon\"\n   15  \n   16  %>\n\nE:\\UnityProj_2019\\TinaX\\Examples\\E01_HelloWorld_Lua\\Assets\\TinaX\\Lua\\Vendor\\Src\\Editor\\Template\\LuaRegister.tpl.txt:\n   13  using System.Reflection;\n   14  <%\n   15: require \"TemplateCommon\"\n   16  %>\n   17  \n\nE:\\UnityProj_2019\\TinaX\\Examples\\E01_HelloWorld_Lua\\Assets\\TinaX\\Lua\\Vendor\\Src\\Editor\\Template\\LuaRegisterGCM.tpl.txt:\n   13  using System.Reflection;\n   14  <%\n   15: require \"TemplateCommon\"\n   16  %>\n   17  \n\nE:\\UnityProj_2019\\TinaX\\Examples\\E01_HelloWorld_Lua\\Assets\\TinaX\\Lua\\Vendor\\Src\\Editor\\Template\\LuaWrapPusher.tpl.txt:\n   11  using System;\n   12  <%\n   13: require \"TemplateCommon\"\n   14  %>\n   15  \n\nE:\\UnityProj_2019\\TinaX\\Examples\\E01_HelloWorld_Lua\\Assets\\TinaX\\Lua\\Vendor\\Src\\Editor\\Template\\PackUnpack.tpl.txt:\n   11  using System;\n   12  <%\n   13: require \"TemplateCommon\"\n   14  %>\n   15  \n\nE:\\UnityProj_2019\\TinaX\\Examples\\E01_HelloWorld_Lua\\Assets\\TinaX\\Lua\\Vendor\\Src\\Editor\\Template\\TemplateCommon.lua.txt:\n    3  -- Licensed under the MIT License (the \"License\"); you may not use this file except in compliance with the License. You may obtain a copy of the License at\n    4  -- http://opensource.org/licenses/MIT\n    5: -- Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \"AS IS\" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.\n    6  \n    7  local friendlyNameMap = {\n\nE:\\UnityProj_2019\\TinaX\\Examples\\E01_HelloWorld_Lua\\Assets\\TinaX\\Lua\\Vendor\\Src\\TemplateEngine\\TemplateEngine.cs:\n    4   * Licensed under the MIT License (the \"License\"); you may not use this file except in compliance with the License. You may obtain a copy of the License at\n    5   * http://opensource.org/licenses/MIT\n    6:  * Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \"AS IS\" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.\n    7  */\n    8  \n\nE:\\UnityProj_2019\\TinaX\\Examples\\E01_HelloWorld_Lua\\Assets\\TinaX\\LuaExtension\\init.lua.txt:\n   19  }\n   20  \n   21: --- 获取require列表\n   22  -- @param t_enablePackages table 一个数组table,记录Packages定义\n   23  -- @return string\n   24: local function GetRequireFilePaths(t_enablePackages)\n   25      local result = {}\n   26      if(t_enablePackages ~= nil and type(t_enablePackages) == \"table\") then\n   ..\n   39  end\n   40  \n   41: local function RequireAllFiles(list)\n   42      for _ , v in ipairs(list) do\n   43:         require(v);\n   44      end\n   45  end\n   46  \n   47: local function RequireAllFilesAsync(list, onFinish)\n   48      local total = #list\n   49      local counter = 0;\n   50      local flag_err = false;\n   51      for _, v in ipairs(list) do\n   52:         requireAsync(v, function(result, err)\n   53              if(flag_err)then return end\n   54  \n   ..\n   82      XCore.XExtension = XCore.XExtension or {}\n   83      XCore.XExtension.RootPath = s_extensionRootPath;\n   84:     local requireList = GetRequireFilePaths(t_params.EnablePackages);\n   85:     -- dump(requireList);\n   86:     RequireAllFiles(requireList);\n   87  end\n   88  \n   ..\n   99      XCore.XExtension = XCore.XExtension or {}\n  100      XCore.XExtension.RootPath = s_extensionRootPath;\n  101:     local requireList = GetRequireFilePaths(t_params.EnablePackages);\n  102:     -- dump(requireList);\n  103:     RequireAllFilesAsync(requireList, f_onFinishCallback);\n  104  end\n  105  \n\nD:\\Software\\Sublime Text\\Data\\Packages\\Default\\Preferences.sublime-settings:\n   61  \n   62      // Makes auto indent a little smarter, e.g., by indenting the next line\n   63:     // after an if statement in C. Requires auto_indent to be enabled.\n   64      \"smart_indent\": true,\n   65  \n   66:     // Adds whitespace up to the first open bracket when indenting. Requires\n   67      // auto_indent to be enabled.\n   68      \"indent_to_bracket\": false,\n   ..\n  376  \n  377      // File indexing parses all files in the side bar, and builds an index of\n  378:     // their symbols. This is required for Goto Definition to work.\n  379      \"index_files\": true,\n  380  \n  ...\n  392  \n  393      // List any packages to ignore here. When removing entries from this list,\n  394:     // a restart may be required if the package contains plugins.\n  395      \"ignored_packages\": [\"Vintage\"]\n  396  }\n\n104 matches across 46 files\n",
+			"settings":
+			{
+				"buffer_size": 31677,
+				"line_ending": "Windows",
+				"name": "Find Results",
+				"scratch": true
+			}
+		},
+		{
+			"file": "Assets/App/Lua/UI/test.lua.txt",
+			"settings":
+			{
+				"buffer_size": 75,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/D/Software/Sublime Text/Data/Packages/User/Plain text.sublime-settings",
+			"settings":
+			{
+				"buffer_size": 36,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/D/Software/Sublime Text/Data/Packages/User/Preferences.sublime-settings",
+			"settings":
+			{
+				"buffer_size": 548,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 375.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"colorpick",
+				"Color Picker"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"install package",
+				"Package Control: Install Package"
+			],
+			[
+				"in",
+				"Package Control: Install Package→安装插件"
+			],
+			[
+				"i",
+				"Package Control: Install Package→安装插件"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/E/UnityProj_2019/TinaX/Examples/E01_HelloWorld_Lua/Assets",
+		"/E/UnityProj_2019/TinaX/Examples/E01_HelloWorld_Lua/Assets/App",
+		"/E/UnityProj_2019/TinaX/Examples/E01_HelloWorld_Lua/Assets/App/Lua",
+		"/E/UnityProj_2019/TinaX/Examples/E01_HelloWorld_Lua/Assets/App/Lua/Startup",
+		"/E/UnityProj_2019/TinaX/Examples/E01_HelloWorld_Lua/Assets/App/Lua/UI",
+		"/E/UnityProj_2019/TinaX/Examples/E01_HelloWorld_Lua/Assets/Resources"
+	],
+	"file_history":
+	[
+		"/E/UnityProj_2019/TinaX/Examples/E01_HelloWorld_Lua/Assets/App/Lua/UI/fetchData.lua.txt",
+		"/D/Software/Sublime Text/Data/Packages/User/JSON (Sublime).sublime-settings",
+		"/D/Software/Sublime Text/Data/Packages/User/Default (Windows).sublime-keymap",
+		"/D/Software/Sublime Text/Data/Packages/User/Distraction Free.sublime-settings",
+		"/D/Software/Sublime Text/Data/Packages/Default/Preferences.sublime-settings",
+		"/E/UnityProj_2019/TinaXTest/Assets/App/Lua/Startup/startup.lua.txt",
+		"/E/UnityProj_2019/TinaXTest/Assets/App/Lua/Startup/test.lua",
+		"/E/UnityProj_2019/TinaXTest/Assets/TinaX/Lua/TinaX.Lua/Lua/extend/luabase.lua.txt",
+		"/D/Software/Sublime Text/Data/Packages/User/Preferences.sublime-settings",
+		"/D/Ohter/x4Project/Assets/Lua/Base/UI/UIManager.lua",
+		"/D/Ohter/x4Project/Assets/Lua/Base/UI/UIConst.lua",
+		"/D/Ohter/x4Project/Assets/Lua/Base/Global.lua",
+		"/D/Ohter/x4Project/Assets/Lua/Base/UI/LuaWindow.lua",
+		"/D/Software/Sublime Text/Data/Packages/Default/Default (Windows).sublime-keymap",
+		"/D/Ohter/x4Project/Assets/Lua/Module/HotUpdateModule.lua",
+		"/D/Ohter/x4Project/Assets/Lua/Base/Main.lua",
+		"/D/Ohter/x4Project/Assets/Lua/Common/EventDispatcher.lua",
+		"/D/Ohter/x4Project/Assets/Lua/Module/Notice/NoticeManager.lua",
+		"/D/Ohter/x4Project/Assets/Lua/Base/Core/LuaObject.lua",
+		"/C/Users/YOLO/Documents/2018.4Test/Build/Build.manifest",
+		"/C/Program Files/Unity2018.4/Unity/Editor/Data/PlaybackEngines/AndroidPlayer/Tools/GradleTemplates/mainTemplate.gradle",
+		"/C/Users/YOLO/Desktop/FakeServer/index.html",
+		"/C/Users/YOLO/Documents/2018.4Test/Build/testab.manifest",
+		"/C/Users/YOLO/Documents/2018.4Test/Build/go3d.sphere.manifest",
+		"/C/Users/YOLO/Documents/2018.4Test/Build/go3d.cube.manifest",
+		"/C/Users/YOLO/AppData/LocalLow/DefaultCompany/2018_4Test/TestDownload/go3d.cube",
+		"/C/Users/YOLO/AppData/LocalLow/DefaultCompany/2018_4Test/TestDownload/testab",
+		"/C/Users/YOLO/Documents/2018.4Test/Build/testab",
+		"/D/Ohter/x4Project/Assets/Lua/Module/Game.lua",
+		"/D/SteamLibrary/steamapps/common/dota 2 beta/content/dota_addons/test/scripts/npc/npc_heroes_custom.txt",
+		"/D/SteamLibrary/steamapps/common/dota 2 beta/content/dota_addons/test/scripts/npc/npc_units_custom.txt",
+		"/D/SteamLibrary/steamapps/common/dota 2 beta/content/dota_addons/rpg_example/panorama/scripts/custom_game/rpg_example_main.js",
+		"/C/Users/YOLO/Documents/2018.4Test/Build/Build",
+		"/E/程序设计/Python/testproject/sublimetest.py",
+		"/D/Program Files (x86)/Sublime_Text3_Stable_Build_3176_x64_Chs/Sublime Text/Data/Packages/Default/Default (Windows).sublime-keymap",
+		"/D/Program Files (x86)/Sublime_Text3_Stable_Build_3176_x64_Chs/Sublime Text/Data/Packages/User/Default (Windows).sublime-keymap",
+		"/D/Program Files (x86)/Sublime_Text3_Stable_Build_3176_x64_Chs/Sublime Text/Data/Packages/Default/Preferences.sublime-settings",
+		"/D/Program Files (x86)/Sublime_Text3_Stable_Build_3176_x64_Chs/Sublime Text/Data/Packages/User/Preferences.sublime-settings",
+		"/C/Users/Ronales/Desktop/config.py",
+		"/D/Google_downloadFile/新建文件夹/Google_downloadFile - 快捷方式.lnk"
+	],
+	"find":
+	{
+		"height": 49.0
+	},
+	"find_in_files":
+	{
+		"height": 135.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"lua",
+			"require",
+			"file",
+			"ignore"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "Assets/App/Lua/Startup/startup.lua.txt",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1423,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								526,
+								526
+							]
+						],
+						"settings":
+						{
+							"origin_encoding": "UTF-8",
+							"syntax": "Packages/Lua/Lua.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 207.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 31677,
+						"regions":
+						{
+							"match":
+							{
+								"flags": 112,
+								"regions":
+								[
+									[
+										155,
+										162
+									],
+									[
+										392,
+										399
+									],
+									[
+										616,
+										623
+									],
+									[
+										756,
+										763
+									],
+									[
+										1170,
+										1177
+									],
+									[
+										1430,
+										1437
+									],
+									[
+										1852,
+										1859
+									],
+									[
+										2159,
+										2166
+									],
+									[
+										2184,
+										2191
+									],
+									[
+										2522,
+										2529
+									],
+									[
+										2917,
+										2924
+									],
+									[
+										3216,
+										3223
+									],
+									[
+										3583,
+										3590
+									],
+									[
+										3808,
+										3815
+									],
+									[
+										3882,
+										3889
+									],
+									[
+										4277,
+										4284
+									],
+									[
+										4570,
+										4577
+									],
+									[
+										4905,
+										4912
+									],
+									[
+										5050,
+										5057
+									],
+									[
+										5105,
+										5112
+									],
+									[
+										5353,
+										5360
+									],
+									[
+										5747,
+										5754
+									],
+									[
+										5976,
+										5983
+									],
+									[
+										6261,
+										6268
+									],
+									[
+										6641,
+										6648
+									],
+									[
+										6870,
+										6877
+									],
+									[
+										7175,
+										7182
+									],
+									[
+										7418,
+										7425
+									],
+									[
+										7603,
+										7610
+									],
+									[
+										7713,
+										7720
+									],
+									[
+										7749,
+										7756
+									],
+									[
+										7946,
+										7953
+									],
+									[
+										8070,
+										8077
+									],
+									[
+										8259,
+										8266
+									],
+									[
+										8589,
+										8596
+									],
+									[
+										8759,
+										8766
+									],
+									[
+										8880,
+										8887
+									],
+									[
+										9300,
+										9307
+									],
+									[
+										9561,
+										9568
+									],
+									[
+										10053,
+										10060
+									],
+									[
+										10692,
+										10699
+									],
+									[
+										11334,
+										11341
+									],
+									[
+										11975,
+										11982
+									],
+									[
+										12624,
+										12631
+									],
+									[
+										13267,
+										13274
+									],
+									[
+										13902,
+										13909
+									],
+									[
+										14536,
+										14543
+									],
+									[
+										15170,
+										15177
+									],
+									[
+										15658,
+										15665
+									],
+									[
+										16207,
+										16214
+									],
+									[
+										16846,
+										16853
+									],
+									[
+										17482,
+										17489
+									],
+									[
+										18126,
+										18133
+									],
+									[
+										18767,
+										18774
+									],
+									[
+										19405,
+										19412
+									],
+									[
+										20049,
+										20056
+									],
+									[
+										20697,
+										20704
+									],
+									[
+										21334,
+										21341
+									],
+									[
+										21980,
+										21987
+									],
+									[
+										22613,
+										22620
+									],
+									[
+										23257,
+										23264
+									],
+									[
+										23749,
+										23756
+									],
+									[
+										24145,
+										24152
+									],
+									[
+										24776,
+										24783
+									],
+									[
+										25229,
+										25236
+									],
+									[
+										25494,
+										25501
+									],
+									[
+										25779,
+										25786
+									],
+									[
+										26001,
+										26008
+									],
+									[
+										26224,
+										26231
+									],
+									[
+										26484,
+										26491
+									],
+									[
+										26791,
+										26798
+									],
+									[
+										27082,
+										27089
+									],
+									[
+										27292,
+										27299
+									],
+									[
+										27505,
+										27512
+									],
+									[
+										27706,
+										27713
+									],
+									[
+										27904,
+										27911
+									],
+									[
+										28293,
+										28300
+									],
+									[
+										28973,
+										28980
+									],
+									[
+										29413,
+										29420
+									],
+									[
+										29536,
+										29543
+									],
+									[
+										29729,
+										29736
+									],
+									[
+										29806,
+										29813
+									],
+									[
+										29874,
+										29881
+									],
+									[
+										30061,
+										30068
+									],
+									[
+										30290,
+										30297
+									],
+									[
+										30307,
+										30314
+									],
+									[
+										30369,
+										30376
+									],
+									[
+										30394,
+										30401
+									],
+									[
+										30410,
+										30417
+									],
+									[
+										30579,
+										30586
+									],
+									[
+										30596,
+										30603
+									],
+									[
+										30658,
+										30665
+									],
+									[
+										30683,
+										30690
+									],
+									[
+										30704,
+										30711
+									],
+									[
+										30968,
+										30975
+									],
+									[
+										31120,
+										31127
+									],
+									[
+										31345,
+										31352
+									],
+									[
+										31554,
+										31561
+									]
+								],
+								"scope": ""
+							}
+						},
+						"selection":
+						[
+							[
+								738,
+								797
+							]
+						],
+						"settings":
+						{
+							"detect_indentation": false,
+							"line_numbers": false,
+							"output_tag": 1,
+							"result_base_dir": "",
+							"result_file_regex": "^([^ \t].*):$",
+							"result_line_regex": "^ +([0-9]+):",
+							"scroll_past_end": true,
+							"syntax": "Packages/Default/Find Results.hidden-tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "Assets/App/Lua/UI/test.lua.txt",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 75,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								75,
+								75
+							]
+						],
+						"settings":
+						{
+							"origin_encoding": "ASCII",
+							"syntax": "Packages/Lua/Lua.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/D/Software/Sublime Text/Data/Packages/User/Plain text.sublime-settings",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 36,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								36,
+								36
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/zzz A File Icon zzz/aliases/JSON (Sublime).sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Lua/Lua.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "/D/Software/Sublime Text/Data/Packages/User/Preferences.sublime-settings",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 548,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								343,
+								343
+							]
+						],
+						"settings":
+						{
+							"origin_encoding": "ASCII",
+							"syntax": "Packages/zzz A File Icon zzz/aliases/JSON (Sublime).sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 37.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 190.0
+	},
+	"output.find_results":
+	{
+		"height": 124.0
+	},
+	"pinned_build_system": "",
+	"project": "LuaProjecet.sublime-project",
+	"replace":
+	{
+		"height": 50.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"test.lua",
+				"App\\Lua\\UI\\test.lua.txt"
+			],
+			[
+				"luABASE",
+				"Lua\\extend\\luabase.lua.txt"
+			],
+			[
+				"start",
+				"Startup\\startup.lua.txt"
+			],
+			[
+				"uicon",
+				"Base\\UI\\UIConst.lua"
+			],
+			[
+				"LuaWindow",
+				"Base\\UI\\LuaWindow.lua"
+			],
+			[
+				"global",
+				"Base\\Global.lua"
+			],
+			[
+				"uimanager",
+				"Base\\UI\\UIManager.lua"
+			],
+			[
+				"noticemana",
+				"Lua\\Module\\Notice\\NoticeManager.lua"
+			],
+			[
+				"eventdispatcher",
+				"Lua\\Common\\EventDispatcher.lua"
+			],
+			[
+				"luaobject",
+				"Lua\\Base\\Core\\LuaObject.lua"
+			],
+			[
+				"HotUpdateModule",
+				"Lua\\Module\\HotUpdateModule.lua"
+			],
+			[
+				"game",
+				"Lua\\Module\\Game.lua"
+			],
+			[
+				"main.lua",
+				"Lua\\Base\\Main.lua"
+			],
+			[
+				"testab",
+				"Build\\testab.manifest"
+			],
+			[
+				"build.mani",
+				"Build\\Build.manifest"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 229.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
